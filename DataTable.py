@@ -12,7 +12,7 @@ server = app.server
 
 #---------------------------------------------------------------
 #Taken from https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
-df = pd.read_csv("COVID-19-geographic-disbtribution-worldwide-2020-03-29.csv")
+df = pd.read_csv("dataset.csv")
 
 dff = df.groupby('countriesAndTerritories', as_index=False)[['deaths','cases']].sum()
 print (dff[:5])
